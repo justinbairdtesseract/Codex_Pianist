@@ -23,24 +23,13 @@ def Xform "World"
         color3f[] primvars:displayColor = [(0.14, 0.14, 0.14)]
     }
 
-    def Cube "PianoTable" (
-        prepend apiSchemas = ["PhysicsCollisionAPI"]
+    def Xform "PianoKeyboard" (
+        prepend references = @../assets/keyboard/robopianist_keyboard.usda@
     )
     {
-        double3 xformOp:translate = (0.55, 0, 0.37)
-        double3 xformOp:scale = (0.45, 0.32, 0.37)
-        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
-        color3f[] primvars:displayColor = [(0.28, 0.22, 0.16)]
-    }
-
-    def Cube "KeyboardProxy" (
-        prepend apiSchemas = ["PhysicsCollisionAPI"]
-    )
-    {
-        double3 xformOp:translate = (0.7, 0, 0.77)
-        double3 xformOp:scale = (0.28, 0.08, 0.03)
-        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
-        color3f[] primvars:displayColor = [(0.95, 0.95, 0.95)]
+        double3 xformOp:translate = (0.676093, -0.087234, 0.988099)
+        double3 xformOp:rotateXYZ = (0, 0, 180)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ"]
     }
 
     def Xform "PianistRobot" (

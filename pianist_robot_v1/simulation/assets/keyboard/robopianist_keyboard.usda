@@ -1,0 +1,731 @@
+#usda 1.0
+(
+    defaultPrim = "RoboPianistKeyboard"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "RoboPianistKeyboard"
+{
+    def Cube "Base" (
+        prepend apiSchemas = ["PhysicsCollisionAPI"]
+    )
+    {
+        double3 xformOp:translate = (-0.127, 0, 0.02)
+        double3 xformOp:scale = (0.05, 0.61075, 0.02)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        color3f[] primvars:displayColor = [(0.15, 0.15, 0.15)]
+    }
+
+    def Xform "WhiteKeys"
+    {
+        def Cube "white_key_0"
+        {
+            double3 xformOp:translate = (0, -0.599250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_2"
+        {
+            double3 xformOp:translate = (0, -0.575750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_3"
+        {
+            double3 xformOp:translate = (0, -0.552250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_5"
+        {
+            double3 xformOp:translate = (0, -0.528750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_7"
+        {
+            double3 xformOp:translate = (0, -0.505250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_8"
+        {
+            double3 xformOp:translate = (0, -0.481750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_10"
+        {
+            double3 xformOp:translate = (0, -0.458250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_12"
+        {
+            double3 xformOp:translate = (0, -0.434750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_14"
+        {
+            double3 xformOp:translate = (0, -0.411250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_15"
+        {
+            double3 xformOp:translate = (0, -0.387750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_17"
+        {
+            double3 xformOp:translate = (0, -0.364250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_19"
+        {
+            double3 xformOp:translate = (0, -0.340750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_20"
+        {
+            double3 xformOp:translate = (0, -0.317250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_22"
+        {
+            double3 xformOp:translate = (0, -0.293750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_24"
+        {
+            double3 xformOp:translate = (0, -0.270250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_26"
+        {
+            double3 xformOp:translate = (0, -0.246750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_27"
+        {
+            double3 xformOp:translate = (0, -0.223250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_29"
+        {
+            double3 xformOp:translate = (0, -0.199750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_31"
+        {
+            double3 xformOp:translate = (0, -0.176250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_32"
+        {
+            double3 xformOp:translate = (0, -0.152750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_34"
+        {
+            double3 xformOp:translate = (0, -0.129250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_36"
+        {
+            double3 xformOp:translate = (0, -0.105750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_38"
+        {
+            double3 xformOp:translate = (0, -0.082250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_39"
+        {
+            double3 xformOp:translate = (0, -0.058750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_41"
+        {
+            double3 xformOp:translate = (0, -0.035250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_43"
+        {
+            double3 xformOp:translate = (0, -0.011750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_44"
+        {
+            double3 xformOp:translate = (0, 0.011750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_46"
+        {
+            double3 xformOp:translate = (0, 0.035250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_48"
+        {
+            double3 xformOp:translate = (0, 0.058750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_50"
+        {
+            double3 xformOp:translate = (0, 0.082250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_51"
+        {
+            double3 xformOp:translate = (0, 0.105750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_53"
+        {
+            double3 xformOp:translate = (0, 0.129250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_55"
+        {
+            double3 xformOp:translate = (0, 0.152750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_56"
+        {
+            double3 xformOp:translate = (0, 0.176250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_58"
+        {
+            double3 xformOp:translate = (0, 0.199750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_60"
+        {
+            double3 xformOp:translate = (0, 0.223250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_62"
+        {
+            double3 xformOp:translate = (0, 0.246750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_63"
+        {
+            double3 xformOp:translate = (0, 0.270250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_65"
+        {
+            double3 xformOp:translate = (0, 0.293750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_67"
+        {
+            double3 xformOp:translate = (0, 0.317250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_68"
+        {
+            double3 xformOp:translate = (0, 0.340750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_70"
+        {
+            double3 xformOp:translate = (0, 0.364250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_72"
+        {
+            double3 xformOp:translate = (0, 0.387750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_74"
+        {
+            double3 xformOp:translate = (0, 0.411250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_75"
+        {
+            double3 xformOp:translate = (0, 0.434750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_77"
+        {
+            double3 xformOp:translate = (0, 0.458250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_79"
+        {
+            double3 xformOp:translate = (0, 0.481750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_80"
+        {
+            double3 xformOp:translate = (0, 0.505250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_82"
+        {
+            double3 xformOp:translate = (0, 0.528750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_84"
+        {
+            double3 xformOp:translate = (0, 0.552250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_86"
+        {
+            double3 xformOp:translate = (0, 0.575750, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+        def Cube "white_key_87"
+        {
+            double3 xformOp:translate = (0, 0.599250, 0.011250)
+            double3 xformOp:scale = (0.075000, 0.011250, 0.011250)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.9, 0.9, 0.9)]
+        }
+
+    }
+
+    def Xform "BlackKeys"
+    {
+        def Cube "black_key_1"
+        {
+            double3 xformOp:translate = (-0.030000, -0.587500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_4"
+        {
+            double3 xformOp:translate = (-0.030000, -0.540000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_6"
+        {
+            double3 xformOp:translate = (-0.030000, -0.516500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_9"
+        {
+            double3 xformOp:translate = (-0.030000, -0.469500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_11"
+        {
+            double3 xformOp:translate = (-0.030000, -0.446000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_13"
+        {
+            double3 xformOp:translate = (-0.030000, -0.422500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_16"
+        {
+            double3 xformOp:translate = (-0.030000, -0.375500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_18"
+        {
+            double3 xformOp:translate = (-0.030000, -0.352000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_21"
+        {
+            double3 xformOp:translate = (-0.030000, -0.305000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_23"
+        {
+            double3 xformOp:translate = (-0.030000, -0.281500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_25"
+        {
+            double3 xformOp:translate = (-0.030000, -0.258000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_28"
+        {
+            double3 xformOp:translate = (-0.030000, -0.211000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_30"
+        {
+            double3 xformOp:translate = (-0.030000, -0.187500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_33"
+        {
+            double3 xformOp:translate = (-0.030000, -0.140500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_35"
+        {
+            double3 xformOp:translate = (-0.030000, -0.117000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_37"
+        {
+            double3 xformOp:translate = (-0.030000, -0.093500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_40"
+        {
+            double3 xformOp:translate = (-0.030000, -0.046500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_42"
+        {
+            double3 xformOp:translate = (-0.030000, -0.023000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_45"
+        {
+            double3 xformOp:translate = (-0.030000, 0.024000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_47"
+        {
+            double3 xformOp:translate = (-0.030000, 0.047500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_49"
+        {
+            double3 xformOp:translate = (-0.030000, 0.071000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_52"
+        {
+            double3 xformOp:translate = (-0.030000, 0.118000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_54"
+        {
+            double3 xformOp:translate = (-0.030000, 0.141500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_57"
+        {
+            double3 xformOp:translate = (-0.030000, 0.188500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_59"
+        {
+            double3 xformOp:translate = (-0.030000, 0.212000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_61"
+        {
+            double3 xformOp:translate = (-0.030000, 0.235500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_64"
+        {
+            double3 xformOp:translate = (-0.030000, 0.282500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_66"
+        {
+            double3 xformOp:translate = (-0.030000, 0.306000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_69"
+        {
+            double3 xformOp:translate = (-0.030000, 0.353000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_71"
+        {
+            double3 xformOp:translate = (-0.030000, 0.376500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_73"
+        {
+            double3 xformOp:translate = (-0.030000, 0.400000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_76"
+        {
+            double3 xformOp:translate = (-0.030000, 0.447000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_78"
+        {
+            double3 xformOp:translate = (-0.030000, 0.470500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_81"
+        {
+            double3 xformOp:translate = (-0.030000, 0.517500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_83"
+        {
+            double3 xformOp:translate = (-0.030000, 0.541000, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+        def Cube "black_key_85"
+        {
+            double3 xformOp:translate = (-0.030000, 0.564500, 0.026000)
+            double3 xformOp:scale = (0.045000, 0.005000, 0.009000)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        }
+
+    }
+}

@@ -31,7 +31,7 @@ def Xform "pianist_robot"
             )
             {
                 double3 xformOp:translate = (0.004, 0.0, 0.026)
-                double3 xformOp:rotateXYZ = (0.0, 0.0, 0.0)
+                double3 xformOp:rotateXYZ = (0.0, 0.0, 225.0)
                 double3 xformOp:scale = (1.0, 1.0, 1.0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
