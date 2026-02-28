@@ -32,3 +32,12 @@ Export_Codex_Pianist/__pycache__/
 # Isaac cache / shader artifacts if generated inside project
 **/kit/cache/
 **/GLCache/
+
+# Local training outputs / environment backups
+logs/
+.setup-backups/
+
+# Local Isaac inspection helpers
+pianist_robot_v1/simulation/_dump_link_xforms.py
+pianist_robot_v1/simulation/_list_arm_prims.py
+pianist_robot_v1/simulation/_measure_center_pose.py
