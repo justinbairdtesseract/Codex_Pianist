@@ -27,6 +27,10 @@ That includes:
 
 This is not a manually curated example repo that was later summarized in AI. The implementation work itself was done through Codex-driven development.
 
+## Codex-Driven Reward Evolution
+
+Our project utilizes a Recursive Reward Loop. We provided Codex with the URDF joint maps and the MIDI target. Codex generated the mdp/rewards.py logic, which was then iterated upon by feeding simulation 'failure logs' back into the model. This allowed for Zero-Shot Finger Isolation (Tucked Thumb/Pinky) which is notoriously difficult to achieve with manual heuristic tuning.
+
 ## Version
 
 - Current repository snapshot: `v1.0.0`
