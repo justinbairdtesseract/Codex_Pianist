@@ -1,0 +1,12 @@
+[submodule "pianist_robot_v1/simulation/sources/IsaacLab"]
+	path = pianist_robot_v1/simulation/sources/IsaacLab
+	url = https://github.com/isaac-sim/IsaacLab.git
+	branch = main
+[submodule "pianist_robot_v1/simulation/sources/dex-urdf"]
+	path = pianist_robot_v1/simulation/sources/dex-urdf
+	url = https://github.com/dexsuite/dex-urdf.git
+	branch = main
+[submodule "pianist_robot_v1/simulation/sources/xarm_ros2"]
+	path = pianist_robot_v1/simulation/sources/xarm_ros2
+	url = https://github.com/xArm-Developer/xarm_ros2.git
+	branch = humble

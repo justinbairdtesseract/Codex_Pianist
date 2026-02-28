@@ -1,0 +1,34 @@
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+.venv_isaac/
+.uv-cache/
+
+# Local vendor/runtime caches
+.compat-libs/
+.UFACTORY/
+
+# Editor files
+.vscode/
+.idea/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Nested source-control metadata from vendored upstream sources
+**/.git/
+
+# Local export test environment
+Export_Codex_Pianist/.venv/
+Export_Codex_Pianist/__pycache__/
+
+# Isaac cache / shader artifacts if generated inside project
+**/kit/cache/
+**/GLCache/

@@ -1,0 +1,45 @@
+{
+  "output_usd": "pianist_robot.usda",
+  "root_prim": "pianist_robot",
+  "up_axis": "Z",
+  "meters_per_unit": 1.0,
+  "arm": {
+    "usd": "uf850.usd",
+    "prim": "arm",
+    "mount": {
+      "translate_m": [0.0, 0.0, 0.0],
+      "rotate_xyz_deg": [0.0, 0.0, 0.0],
+      "scale": [1.0, 1.0, 1.0]
+    }
+  },
+  "adapter": {
+    "usd": "assets/adapter/Inspire-adapter.usda",
+    "prim": "adapter",
+    "parent": "/pianist_robot/arm/link_eef",
+    "mount": {
+      "translate_m": [0.0, 0.0, 0.005],
+      "rotate_xyz_deg": [0.0, 0.0, 0.0],
+      "scale": [0.001, 0.001, 0.001]
+    }
+  },
+  "hand": {
+    "usd": "inspire_rh56dfx_2r_hand.usd",
+    "prim": "hand",
+    "parent": "/pianist_robot/arm/link_eef",
+    "mount": {
+      "translate_m": [0.004, 0.0, 0.026],
+      "rotate_xyz_deg": [0.0, 0.0, 0.0],
+      "scale": [1.0, 1.0, 1.0]
+    }
+  },
+  "fixed_joints": {
+    "arm_to_adapter": {
+      "body0": "/pianist_robot/arm/link_eef",
+      "body1": "/pianist_robot/arm/link_eef/adapter"
+    },
+    "adapter_to_hand": {
+      "body0": "/pianist_robot/arm/link_eef/adapter",
+      "body1": "/pianist_robot/arm/link_eef/hand/base"
+    }
+  }
+}

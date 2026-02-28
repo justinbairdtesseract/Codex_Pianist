@@ -1,0 +1,52 @@
+#usda 1.0
+(
+    defaultPrim = "pianist_robot"
+    upAxis = "Z"
+    metersPerUnit = 1.0
+)
+
+def Xform "pianist_robot"
+{
+    def Xform "arm" (
+        prepend references = @./uf850.usd@
+    )
+    {
+        double3 xformOp:translate = (0.0, 0.0, 0.0)
+        double3 xformOp:rotateXYZ = (0.0, 0.0, 0.0)
+        double3 xformOp:scale = (1.0, 1.0, 1.0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        over "link_eef"
+        {
+            def Xform "adapter" (
+                prepend references = @./assets/adapter/Inspire-adapter.usda@
+            )
+            {
+                double3 xformOp:translate = (0.0, 0.0, 0.005)
+                double3 xformOp:rotateXYZ = (0.0, 0.0, 0.0)
+                double3 xformOp:scale = (0.001, 0.001, 0.001)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            def Xform "hand" (
+                prepend references = @./inspire_rh56dfx_2r_hand.usd@
+            )
+            {
+                double3 xformOp:translate = (0.004, 0.0, 0.026)
+                double3 xformOp:rotateXYZ = (0.0, 0.0, 0.0)
+                double3 xformOp:scale = (1.0, 1.0, 1.0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+
+    def PhysicsFixedJoint "joint_arm_to_adapter"
+    {
+        rel physics:body0 = </pianist_robot/arm/link_eef>
+        rel physics:body1 = </pianist_robot/arm/link_eef/adapter>
+    }
+
+    def PhysicsFixedJoint "joint_adapter_to_hand"
+    {
+        rel physics:body0 = </pianist_robot/arm/link_eef/adapter>
+        rel physics:body1 = </pianist_robot/arm/link_eef/hand/base>
+    }
+}

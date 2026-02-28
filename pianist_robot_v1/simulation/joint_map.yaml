@@ -1,0 +1,110 @@
+version: 1
+stage_path: /home/justin-baird/Codex_Pianist/pianist_robot_v1/simulation/scenes/pianist_lab.usda
+robot_root: /World/PianistRobot
+articulation_roots:
+- /World/PianistRobot/arm/root_joint
+- /World/PianistRobot/hand/base
+arm:
+  joint_order:
+  - joint1
+  - joint2
+  - joint3
+  - joint4
+  - joint5
+  - joint6
+  play_center_deg:
+  - 0.0
+  - -17.0
+  - -28.0
+  - 0.0
+  - 75.0
+  - -45.0
+  joints:
+    joint1:
+      path: /World/PianistRobot/arm/joints/joint1
+      lower_deg: -360.0
+      upper_deg: 360.0
+    joint2:
+      path: /World/PianistRobot/arm/joints/joint2
+      lower_deg: -132.0
+      upper_deg: 132.0
+    joint3:
+      path: /World/PianistRobot/arm/joints/joint3
+      lower_deg: -241.99998474121094
+      upper_deg: 3.5000271797180176
+    joint4:
+      path: /World/PianistRobot/arm/joints/joint4
+      lower_deg: -360.0
+      upper_deg: 360.0
+    joint5:
+      path: /World/PianistRobot/arm/joints/joint5
+      lower_deg: -123.99951934814453
+      upper_deg: 123.99951934814453
+    joint6:
+      path: /World/PianistRobot/arm/joints/joint6
+      lower_deg: -360.0
+      upper_deg: 360.0
+hand:
+  play_finger_order:
+  - index
+  - middle
+  - ring
+  - pinky
+  fingers:
+    index:
+      joint_paths:
+      - /World/PianistRobot/hand/joints/index_proximal_joint
+      - /World/PianistRobot/hand/joints/index_intermediate_joint
+      open_deg:
+      - 0.0
+      - -2.604092836380005
+      closed_deg:
+      - 84.22479248046875
+      - 89.38140869140625
+    middle:
+      joint_paths:
+      - /World/PianistRobot/hand/joints/middle_proximal_joint
+      - /World/PianistRobot/hand/joints/middle_intermediate_joint
+      open_deg:
+      - 0.0
+      - -2.604092836380005
+      closed_deg:
+      - 84.22479248046875
+      - 89.38140869140625
+    ring:
+      joint_paths:
+      - /World/PianistRobot/hand/joints/ring_proximal_joint
+      - /World/PianistRobot/hand/joints/ring_intermediate_joint
+      open_deg:
+      - 0.0
+      - -2.604092836380005
+      closed_deg:
+      - 84.22479248046875
+      - 89.38140869140625
+    pinky:
+      joint_paths:
+      - /World/PianistRobot/hand/joints/pinky_proximal_joint
+      - /World/PianistRobot/hand/joints/pinky_intermediate_joint
+      open_deg:
+      - 0.0
+      - -2.604092836380005
+      closed_deg:
+      - 84.22479248046875
+      - 89.38140869140625
+    thumb:
+      joint_paths:
+      - /World/PianistRobot/hand/joints/thumb_proximal_yaw_joint
+      - /World/PianistRobot/hand/joints/thumb_proximal_pitch_joint
+      - /World/PianistRobot/hand/joints/thumb_intermediate_joint
+      - /World/PianistRobot/hand/joints/thumb_distal_joint
+      open_deg:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      closed_deg:
+      - 74.94287109375
+      - 34.37746810913086
+      - 45.83662033081055
+      - 22.918310165405273
+  press_fraction_default: 0.4
