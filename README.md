@@ -32,6 +32,7 @@ This is not a manually curated example repo that was later summarized in AI. The
 - Current repository snapshot: `v1.0.0`
 - Simulation version marker: [pianist_robot_v1/simulation/VERSION](pianist_robot_v1/simulation/VERSION)
 - Frozen simulation date: `2026-02-27`
+- Current post-`v1.0.0` simulation milestone: `Isaac Sim alignment ready`
 
 Version `1.0.0` captures the first assembled simulation with:
 
@@ -40,6 +41,33 @@ Version `1.0.0` captures the first assembled simulation with:
 - custom printed hand adapter
 - working Isaac scene launch
 - working direct arm/hand command scripts
+
+The current simulation branch state goes beyond that initial snapshot. The Isaac scene has now been aligned so that:
+
+- the RoboPianist keyboard is in the scene
+- the keyboard orientation matches the robot-facing setup
+- the Inspire hand clocking matches the physical adapter/bolt alignment
+- the center arm pose matches the real-world joint values
+- the piano position is aligned so the index finger is positioned over middle C
+- the finger contact lands on the white keys instead of the black keys
+
+## Isaac Sim Alignment Ready
+
+The current simulator milestone is `Isaac Sim alignment ready`.
+
+This means the public repo now contains a visually aligned Isaac scene that is suitable as the starting point for reinforcement-learning work and further task/environment definition.
+
+The aligned scene currently includes:
+
+- `UF850` arm positioned at the calibrated center pose
+- `Inspire RH56DFX-2R` hand clocked to match the real-world mounting orientation
+- printed adapter integrated into the assembly
+- RoboPianist keyboard placed and aligned relative to the hand
+- Isaac launch tooling that opens directly into the inspection scene and applies the center pose automatically
+
+Reference screenshot from the aligned Isaac scene:
+
+![Isaac Sim alignment ready](docs/images/isaac-sim-alignment-ready.png)
 
 ## What Is In This Repo
 
@@ -93,13 +121,16 @@ The current project uses:
 
 The simulation path is centered in [pianist_robot_v1/simulation](pianist_robot_v1/simulation).
 
-Key outputs in `v1.0.0`:
+Key outputs in the current simulation state:
 
 - [uf850.usd](pianist_robot_v1/simulation/uf850.usd)
 - [inspire_rh56dfx_2r_hand.usd](pianist_robot_v1/simulation/inspire_rh56dfx_2r_hand.usd)
 - [assets/adapter/Inspire-adapter.usda](pianist_robot_v1/simulation/assets/adapter/Inspire-adapter.usda)
+- [assets/keyboard/robopianist_keyboard.usda](pianist_robot_v1/simulation/assets/keyboard/robopianist_keyboard.usda)
 - [pianist_robot.usda](pianist_robot_v1/simulation/pianist_robot.usda)
 - [scenes/pianist_lab.usda](pianist_robot_v1/simulation/scenes/pianist_lab.usda)
+- [open_stage_center_pose_on_startup.py](pianist_robot_v1/simulation/open_stage_center_pose_on_startup.py)
+- [run_isaac_gui_center_pose.sh](pianist_robot_v1/simulation/run_isaac_gui_center_pose.sh)
 
 The assembled scene includes:
 
@@ -107,8 +138,8 @@ The assembled scene includes:
 - the Inspire hand
 - the custom adapter
 - a ground plane
-- a table
-- a keyboard proxy for motion testing
+- the RoboPianist keyboard
+- calibrated scene alignment for arm, hand, and keyboard inspection
 
 Detailed simulation notes are in [pianist_robot_v1/simulation/README.md](pianist_robot_v1/simulation/README.md).
 
@@ -171,6 +202,14 @@ source .venv_isaac/bin/activate
 ./simulation/run_isaac_gui.sh simulation/scenes/pianist_lab.usda
 ```
 
+For the aligned inspection scene and calibrated center pose:
+
+```bash
+cd pianist_robot_v1
+source .venv_isaac/bin/activate
+./simulation/run_isaac_gui_center_pose.sh simulation/scenes/pianist_lab.usda
+```
+
 ### Direct Hardware Sanity Check
 
 ```bash
@@ -182,10 +221,11 @@ python startup_test.py --hand-port auto
 
 ## Current Status
 
-At `v1.0.0`, the project has:
+At the current repository state, the project has:
 
 - working hardware-control scripts
-- a working first assembled simulation
+- a working assembled simulation
+- an aligned Isaac Sim piano scene ready for RL setup
 - working GUI launch into Isaac
 - a portable direct-control export
 - a clean public repository baseline for hackathon development
